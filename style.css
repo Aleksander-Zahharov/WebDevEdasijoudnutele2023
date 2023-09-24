@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700,700i|Open+Sans:300,300i,400,400i&subset=latin-ext");
+
+/*HEADER*/
+
+
+header .header-banner {
+    width: 100%;
+    height: calc(100vh - 500px);
+    background-image: url('header.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: table;
+}
+
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+header h1 {
+    font-family: "Gentium Basic", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 100px;
+    color: #fff;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #000;
+}
+
+header h2 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header nav ul {
+    display: block;
+    margin: 0 auto;
+    text-align: center; /*IE*/
+    width: 80%;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 16px 100px;
+}
+
+header nav ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none; 
+}
+
+
+
+
+/*MAIN - GALLERY*/
+
+.img1 {
+    width: 80%;
+    height: 200px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.Meist {
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    font-family: "Open Sans", sans-serif;
+}
+
+.Meist h2 {
+    width: 100%; /* Задайте ширину текстового блока по вашему усмотрению */
+    height: 50px;
+    float: left; /* Выравнивание текстового блока влево */
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 50px;
+}
+
+.Meist p {
+    width: 45%; /* Задайте ширину текстового блока по вашему усмотрению */
+    float: left; /* Выравнивание текстового блока влево */
+    font-size: 18px;
+}
+
+.Meist img {
+    width: 45%; /* Задайте ширину блока с изображением по вашему усмотрению */
+    height: 300px;
+    float: right; /* Выравнивание блока с изображением вправо */
+}
+
+
+
+
+
+
+.kitchens {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    display: flex; /* Устанавливаем flex-контейнер для круглых картинок */
+    justify-content: space-between; /* Равномерное распределение картинок по горизонтали */
+
+}
+
+.kitchens div{
+    text-align: center; /* Центрируем содержимое по горизонтали */
+
+}
+
+
+.kitchens div img {
+    width: 300px; /* Задаем размер круглой картинке */
+    height: 300px;
+    border-radius: 50%; /* Делаем изображение круглым */
+    object-fit: cover; /* Подгоняем изображение в круг */
+}
+
+.post-header {
+    position: relative;
+    top: -195px;
+    color: #fff; /* Цвет текста */
+    padding: 10px; /* Отступ вокруг текста */
+    text-shadow: 3px 3px 9px #111;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center; /* Центрирование текста по горизонтали */
+ 
+}
+
+
+/*FOOTER*/
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    margin-top: 20px;
+    background-color: #172029;
+    overflow: hidden; 
+}
+
+footer ul {
+    width: fit-content;
+    float: left;
+    padding-left: 0px;
+}
+
+footer ul li {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+footer ul li p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.footer-sm {
+    width: 32px;
+    float: right;
+}
+
+.footer-sm img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 950px) {
+    
+    .disclaimer {
+        display: block;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 300;
+        font-size: 18px;
+        letter-spacing: 2px;
+        line-height: 24px;
+        color: #fff;
+        text-transform: uppercase; 
+        float: left;
+        margin: 0 80px;
+    }
+    
+    .disclaimer span {
+        font-style: italic;
+    }
+}
